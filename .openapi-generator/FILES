@@ -1,6 +1,5 @@
 .gitignore
 .travis.yml
-README.md
 api/openapi.yaml
 api_address.go
 api_block.go
@@ -56,8 +55,6 @@ docs/XpubRequest.md
 docs/XpubResult.md
 docs/XpubUtxo.md
 git_push.sh
-go.mod
-go.sum
 model_address_balance.go
 model_address_tx.go
 model_address_utxo.go
