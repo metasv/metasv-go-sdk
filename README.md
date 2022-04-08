@@ -41,11 +41,11 @@ import (
 )
 
 func main() {
-	authCtx := context.WithValue(context.Background(), metasv.ContextAccessToken, "YOUR_METASV_TOKEN")
+	authCtx := context.WithValue(context.Background(), metasv.ContextAccessToken, "YOUR_METASV_KEY")
 	configuration := metasv.NewConfiguration()
 	client := metasv.NewAPIClient(configuration)
 
-	_, response, err := client.BlockApi.BlockGet(authCtx).Execute()
+	_, response, err := client.BlockApi.BlockInfoGet(authCtx).Execute()
 	if err.Error() != "" {
 		fmt.Fprintf(os.Stderr, "Error when calling `BlockApi.BlockInfoGet``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", response)
