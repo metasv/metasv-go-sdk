@@ -373,7 +373,6 @@ paths:
       - bearerAuth: []
       summary: Get all output point of vins in the tx with detailed output script.
       tags:
-      - outpoint
       - tx
   /merchant/broadcast:
     post:

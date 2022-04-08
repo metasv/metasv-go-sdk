@@ -1,5 +1,6 @@
 .gitignore
 .travis.yml
+README.md
 api/openapi.yaml
 api_address.go
 api_block.go
